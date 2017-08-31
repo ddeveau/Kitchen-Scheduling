@@ -16,5 +16,15 @@ Model:
             All jobs in an order must finish at the same time
             The number of simultaneous jobs on a machine must never exceed its capacity.
 
+Notes:
+    Coldness:
+        The w variable represents the "wait" or "coldness", meaning the allowed time units between the completion time of any job in an order and the completion time of the order.
+        I initially included w based on the assumption that simultaneous job completion is not necessary in a restaurant context, but a small w (realistically, 2 or 3 minutes) is necessary to avoid cold food.
+        However, testing various w values revealed that w=0 (i.e. all jobs in an order complete simultaneously) computes an optimal solution much faster than a nonzero w value.
+        This is because w=0 exponentially reduces the number of nodes to be considered by the LP solver.
+
+Changelog:
+    v1.0 Initial Submission
+    v1.1 Improved formatting and comments
 
 
