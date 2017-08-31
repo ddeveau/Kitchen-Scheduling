@@ -17,6 +17,9 @@ Model:
             The number of simultaneous jobs on a machine must never exceed its capacity.
 
 Notes:
+    Assumptions:
+        For simplicity, this project considers the offline batch scheduling scenario. Obviously, a practical system must schedule online as orders are placed.
+        Additionally, the restaurant model has been simplified by removing appetizers/desserts, to assume that every customer orders 1 entree.
     Coldness:
         The w variable represents the "wait" or "coldness", meaning the allowed time units between the completion time of any job in an order and the completion time of the order.
         I initially included w based on the assumption that simultaneous job completion is not necessary in a restaurant context, but a small w (realistically, 2 or 3 minutes) is necessary to avoid cold food.
