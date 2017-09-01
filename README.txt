@@ -1,15 +1,18 @@
-Author  :  Daniel DeVeau
-Advisor :  Dr. Kamesh Munagala
-Edited   : August 31, 2017
+Author  : Daniel DeVeau
+Advisor : Dr. Kamesh Munagala
+Edited  : August 31, 2017
+Contact : danieldeveau81296@gmail.com
 
 Kitchen Queues: A Scheduling Theory problem motivated by restaurant kitchens
 
 Problem Statement:
     The goal of this study is to write an integer linear program (ILP) which optimally schedules a set of restaurant orders.
     What makes this problem unique is that all food items in an order must be completed together (no cold food).
-  
+    The inspiration for this study comes from my own experience as a frycook, where the cooking process was ripe with inefficiencies that ultimately decreased the overall customer experience.
+    Popular sit-down chains use Kitchen Display System (KDS) technologies that aid these inefficiencies, but as of writing this I am not aware of any mathematical optimization used in the kitchen.
+
 Model:
-    A restaurant kitchen can be modeled by a set of m unique machines, representing cooking stations, each with a unique capacity. 
+    A restaurant kitchen can be modeled by a set of m unique machines, representing cooking stations, each with a unique capacity.
     A food order is a set of jobs, where each job j has a processing time Pj and a machine Mj
     The goal is to schedule all jobs on their respective machines, minimizing the sum of order completion times.
     Constraints: 
@@ -30,5 +33,6 @@ Changelog:
     v1.0 Initial Submission
     v1.01 Improved formatting and comments
     v1.02 Renamed for clarity.
+    v1.03 Improved comments, removed whitespace
 
 

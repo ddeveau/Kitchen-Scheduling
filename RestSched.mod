@@ -4,7 +4,7 @@ Authors: Daniel DeVeau, Dr. Kamesh Munagala
 August 2017
 
 Changelog:
-    v1.1 - Formatting and commenting
+    v1.03 - Formatting and commenting
 
 Example Commands:
     GLPK: glpsol --math RestSched_v1.mod -o 'Output_filename'.out
@@ -19,17 +19,17 @@ Example Commands:
 /*
 
 /* PARAMETERS: */
-/* T - Max amt. of time units considered  */
+/* T - Max amt. of time units considered */
 param T;
 
 /* p -  Number of unique machines */
 param p; 
 
-/* w - Max number of time units allowed between jobs in an order aka 'wait' *
+/* w - Max number of time units allowed between jobs in an order aka 'wait' */
 param w;
 
 /* lambda=0 finds the schedule with optimal makespan. */
-/* lambda=large integer finds schedule with minimal completion time of all orders*/
+/* lambda=large integer finds schedule with minimal completion time among all orders*/
 param lambda;
 
 /* Number of orders to be scheduled */
@@ -90,7 +90,7 @@ data;
 
 param num    := 20;
 param maxi   := 5;
-param T      := 60;
+param T      := 45;
 param p      := 3;
 /* NOTE: See README for explanation of wait w=0 */
 param w      := 0;
