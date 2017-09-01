@@ -28,6 +28,7 @@ Notes:
 
 Changelog:
     v1.0 Initial Submission
-    v1.1 Improved formatting and comments
+    v1.01 Improved formatting and comments
+    v1.02 Renamed for clarity.
 
 
